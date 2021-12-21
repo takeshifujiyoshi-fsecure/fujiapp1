@@ -20,17 +20,21 @@ function App({signOut, user}) {
 	
 	const onClickToEditProfile = () => {
 		setViewMode('fetching');
-		apiFetchProfile(user.username).then((profile) => {
+		apiFetchProfile(user.username).then(profile => {
 			setProfile(profile);
 			setViewMode('edit-profile');
+		}).catch(err => {
+			setViewMode('error');
 		});
 	};
 
 	const onClickToListProfiles = () => {
 		setViewMode('fetching');
-		apiFetchAllProfiles().then((profiles) => {
+		apiFetchAllProfiles().then(profiles => {
 			setAllProfiles(profiles);
 			setViewMode('list-profiles');
+		}).catch(err => {
+			setViewMode('error');
 		});
 	};
 
@@ -53,8 +57,9 @@ function App({signOut, user}) {
 				}
 			).then(() => {
 				setViewMode(null);
+			}).catch(err => {
+				setViewMode('error');
 			});
-			
 			return null;
 		};
 
@@ -122,6 +127,8 @@ function App({signOut, user}) {
 			return <p>読み込み中</p>;
 		case 'updating':
 			return <p>更新中</p>;
+		case 'error':
+			return <p>エラー発生！</p>;
 		case 'edit-profile':
 			return <EditProfile />;
 		case 'list-profiles':
