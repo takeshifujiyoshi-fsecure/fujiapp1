@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "fujiapp1",
+    "serviceName": "AppSync",
+    "gqlSchemaPath": "/Users/fujita/work/amplify/fujiapp1/amplify/backend/api/fujiapp1/schema.graphql",
+    "defaultAuthType": {
+      "mode": "API_KEY",
+      "expirationTime": 7
+    }
+  }
+}
