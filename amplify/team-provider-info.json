@@ -14,12 +14,6 @@
     "categories": {
       "auth": {
         "fujiapp14eb2d1ad": {}
-      },
-      "hosting": {
-        "amplifyhosting": {
-          "appId": "d3asn0tmidpy6y",
-          "type": "manual"
-        }
       }
     }
   }
