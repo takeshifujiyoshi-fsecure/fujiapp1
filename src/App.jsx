@@ -24,6 +24,7 @@ function App({signOut, user}) {
 			setProfile(profile);
 			setViewMode('edit-profile');
 		}).catch(err => {
+			console.log('Error in feching profile', err);
 			setViewMode('error');
 		});
 	};
@@ -34,6 +35,7 @@ function App({signOut, user}) {
 			setAllProfiles(profiles);
 			setViewMode('list-profiles');
 		}).catch(err => {
+			console.log('Error in fetching all profiles', err);
 			setViewMode('error');
 		});
 	};
@@ -58,6 +60,7 @@ function App({signOut, user}) {
 			).then(() => {
 				setViewMode(null);
 			}).catch(err => {
+				console.log('Error in updating profile', err);
 				setViewMode('error');
 			});
 			return null;
@@ -140,6 +143,7 @@ function App({signOut, user}) {
 	return (
 		<>
 			<h1>フジアプリへようこそ</h1>
+			<p>ユーザー: {user.username}</p>
 			<button onClick={onClickToEditProfile}>
 				プロフィール設定
 			</button>
