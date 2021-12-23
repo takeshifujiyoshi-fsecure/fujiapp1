@@ -2,11 +2,11 @@
   "AppSyncApiName": "fujiapp1",
   "DynamoDBBillingMode": "PAY_PER_REQUEST",
   "DynamoDBEnableServerSideEncryption": false,
+  "AuthModeLastUpdated": "2021-12-23T08:06:08.380Z",
   "AuthCognitoUserPoolId": {
     "Fn::GetAtt": [
       "authfujiapp14eb2d1ad",
       "Outputs.UserPoolId"
     ]
-  },
-  "AuthModeLastUpdated": "2021-12-22T00:02:48.072Z"
+  }
 }

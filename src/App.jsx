@@ -136,8 +136,9 @@ function App({signOut, user}) {
 			return <EditProfile />;
 		case 'list-profiles':
 			return <ListProfiles />;
+		default:
+			return null;
 		}
-		return null;
 	};
   
 	return (

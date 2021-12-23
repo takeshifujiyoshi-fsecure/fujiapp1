@@ -1,5 +1,5 @@
 import {API, graphqlOperation} from 'aws-amplify';
-import {createProfile, updateProfile, deleteProfile} from './graphql/mutations';
+import {createProfile, updateProfile} from './graphql/mutations';
 import {getProfile, listProfiles} from './graphql/queries';
 
 export async function apiFetchProfile(username) {
