@@ -1,26 +1,26 @@
 {
-  "dev": {
-    "awscloudformation": {
-      "AuthRoleName": "amplify-fujiapp1-dev-215547-authRole",
-      "UnauthRoleArn": "arn:aws:iam::794403296740:role/amplify-fujiapp1-dev-215547-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::794403296740:role/amplify-fujiapp1-dev-215547-authRole",
-      "Region": "ap-northeast-1",
-      "DeploymentBucketName": "amplify-fujiapp1-dev-215547-deployment",
-      "UnauthRoleName": "amplify-fujiapp1-dev-215547-unauthRole",
-      "StackName": "amplify-fujiapp1-dev-215547",
-      "StackId": "arn:aws:cloudformation:ap-northeast-1:794403296740:stack/amplify-fujiapp1-dev-215547/2959fc60-6194-11ec-bdc4-06680d75238d",
-      "AmplifyAppId": "d3asn0tmidpy6y"
-    },
-    "categories": {
-      "auth": {
-        "fujiapp14eb2d1ad": {}
-      },
-      "hosting": {
-        "amplifyhosting": {
-          "appId": "d3asn0tmidpy6y",
-          "type": "manual"
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-fujiapp1-dev-215547-authRole",
+            "UnauthRoleArn": "arn:aws:iam::794403296740:role/amplify-fujiapp1-dev-215547-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::794403296740:role/amplify-fujiapp1-dev-215547-authRole",
+            "Region": "ap-northeast-1",
+            "DeploymentBucketName": "amplify-fujiapp1-dev-215547-deployment",
+            "UnauthRoleName": "amplify-fujiapp1-dev-215547-unauthRole",
+            "StackName": "amplify-fujiapp1-dev-215547",
+            "StackId": "arn:aws:cloudformation:ap-northeast-1:794403296740:stack/amplify-fujiapp1-dev-215547/2959fc60-6194-11ec-bdc4-06680d75238d",
+            "AmplifyAppId": "d3asn0tmidpy6y"
+        },
+        "categories": {
+            "auth": {
+                "fujiapp14eb2d1ad": {}
+            },
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "d3asn0tmidpy6y",
+                    "type": "cicd"
+                }
+            }
         }
-      }
     }
-  }
 }
