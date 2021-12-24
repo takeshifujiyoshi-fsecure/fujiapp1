@@ -1,6 +1,6 @@
 {
   "auth": {
-    "fujiapp14eb2d1ad": {
+    "fujiapp191c1afea": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
@@ -34,7 +34,7 @@
           "defaultAuthentication": {
             "authenticationType": "AMAZON_COGNITO_USER_POOLS",
             "userPoolConfig": {
-              "userPoolId": "authfujiapp14eb2d1ad"
+              "userPoolId": "authfujiapp191c1afea"
             }
           },
           "additionalAuthenticationProviders": []
@@ -45,8 +45,8 @@
   "hosting": {
     "amplifyhosting": {
       "service": "amplifyhosting",
-      "type": "cicd",
-      "lastPushTimeStamp": "2021-12-23T10:20:50.934Z"
+      "providerPlugin": "awscloudformation",
+      "type": "manual"
     }
   }
 }

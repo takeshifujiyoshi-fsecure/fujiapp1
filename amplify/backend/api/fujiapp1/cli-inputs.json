@@ -6,9 +6,7 @@
     "gqlSchemaPath": "/Users/fujita/work/amplify/fujiapp1/amplify/backend/api/fujiapp1/schema.graphql",
     "defaultAuthType": {
       "mode": "AMAZON_COGNITO_USER_POOLS",
-      "cognitoUserPoolId": "authfujiapp14eb2d1ad"
-    },
-    "additionalAuthTypes": [],
-    "conflictResolution": {}
+      "cognitoUserPoolId": "authfujiapp191c1afea"
+    }
   }
 }
