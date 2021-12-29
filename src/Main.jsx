@@ -31,7 +31,7 @@ export function Main({signOut, user}) {
 		default:
 			return null;
 		}
-	}
+	};
 		
 	return (
 		<>
