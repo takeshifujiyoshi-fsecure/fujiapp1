@@ -5,7 +5,7 @@
 import React from 'react';
 import { apiFetchProfile, apiUpdateProfile } from './apiwrapper';
 
-export function useEditProfile(username, email) {
+export function useEditProfile(user) {
 
 	const [state, setState] = React.useState(null);
 	const [profile, setProfile] = React.useState(null);
@@ -16,7 +16,7 @@ export function useEditProfile(username, email) {
 	// バックエンドからの読み込み開始
 	const fetch = () => {
 		setState('fetching');
-		apiFetchProfile(username).then(profile => {
+		apiFetchProfile(user.username).then(profile => {
 			setProfile(profile);
 			setState('ready');
 		}).catch(err => {
@@ -28,6 +28,9 @@ export function useEditProfile(username, email) {
 	
 	// 表示
 	const Display = () => {
+
+		const username = user.username;
+		const email = user.attributes.email;
 
 		const onClickToUpdate = () => {
 			setState('updating');
